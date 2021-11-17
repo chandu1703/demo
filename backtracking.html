@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backtracking</title>
     <link rel="icon" href="http://upenn.imodules.com/s/1587/images/gid2/editor/logos/shield_email.png">
+     
 </head>
 <body>
     <h1>Backtracking</h1>
@@ -210,7 +211,7 @@
             return false;
         }
     </pre>
-    <p>I think the first version is simpler, but the second version is slightly more efficient.
+<p>I think     the first version is simpler, but the second version is slightly more efficient.
     </p>
     <p><b>What are the children?</b></p>
     <p>One of the things that simplifies the above binary tree search is that, at each choice point, you can ignore all the previous choices. Previous choices don't give you any information about what you should do next; as far as you know, both the left and the right child are possible solutions. In many problems, however, you may be able to eliminate children immediately, without recursion.
@@ -544,28 +545,28 @@ static boolean no(BinaryTree node) {
     </pre>
     <p>Along with canMove and makeMove, we are using methods puzzleSolved and printBoard with meanings that should be obvious.</p>
     <p>Here is some output from the program:</p>
-      <b><i>16.</i>  WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK</b><br>
+      <b ><i>16.</i>  WHITE  WHITE  WHITE  _____  BLACK  BLACK  BLACK</b><br>
       <b><i>15.</i>  WHITE  WHITE  WHITE  BLACK  _____  BLACK  BLACK
       </b><br>
-      <b><i>14.</i>    WHITE  WHITE  _____  BLACK  WHITE  BLACK  BLACK
+      <b><i>14.</i>  WHITE  WHITE  _____  BLACK  WHITE  BLACK  BLACK
       </b><br>
-      <b><i>13.</i>    WHITE  _____  WHITE  BLACK  WHITE  BLACK  BLACK
+      <b><i>13.</i>  WHITE  _____  WHITE  BLACK  WHITE  BLACK  BLACK
       </b><br>
       <b><i>12.</i>   WHITE  BLACK  WHITE  _____  WHITE  BLACK  BLACK
       </b><br>
-      <b><i>11.</i>    WHITE  BLACK  WHITE  BLACK  WHITE  _____  BLACK
+      <b><i>11.</i>   WHITE  BLACK  WHITE  BLACK  WHITE  _____  BLACK
       </b><br>
       <b><i>10.</i>  WHITE  BLACK  WHITE  BLACK  WHITE  BLACK  _____
       </b><br>
-       <b><i>9.</i>    WHITE  BLACK  WHITE  BLACK  _____  BLACK  WHITE
+       <b><i>9.</i>  WHITE  BLACK  WHITE  BLACK  _____  BLACK  WHITE
        </b><br>
-       <b><i>8.</i>    WHITE  BLACK  _____  BLACK  WHITE  BLACK  WHITE
+       <b><i>8.</i>   WHITE  BLACK  _____  BLACK  WHITE  BLACK  WHITE
        </b><br>
-       <b><i>7.</i>    _____  BLACK  WHITE  BLACK  WHITE  BLACK  WHITE
+       <b><i>7.</i>   _____  BLACK  WHITE  BLACK  WHITE  BLACK  WHITE
        </b><br>
-       <b><i>6.</i>    BLACK  _____  WHITE  BLACK  WHITE  BLACK  WHITE
+       <b><i>6.</i>   BLACK  _____  WHITE  BLACK  WHITE  BLACK  WHITE
        </b><br>
-       <b><i>5.</i>    BLACK  BLACK  WHITE  _____  WHITE  BLACK  WHITE
+       <b><i>5.</i>   BLACK  BLACK  WHITE  _____  WHITE  BLACK  WHITE
        </b><br>
        <b><i>4.</i>    BLACK  BLACK  WHITE  BLACK  WHITE  _____  WHITE
        </b><br>
